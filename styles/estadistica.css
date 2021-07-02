@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.main .home a { 
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+
+.main .home {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+
+.main .home a:hover {
+    border-bottom: 1px dashed black;
+}
+
+.main .header h1 {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 150px;
+    font-weight: 700;
+}
+
+
+.main .author {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.main .author img {
+    width: 16px;
+    margin: 3px 5px 5px 10px;
+}
+
+.main .author h3 {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+
+.main .author h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.main .author a:hover {
+    border-bottom: 1px dashed black;
+}
+
+
+.main section form {
+    padding: 0px 10px 50px 10px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.main p {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.main section form label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.main section form input {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.main section form button {
+    padding: 8px;
+}

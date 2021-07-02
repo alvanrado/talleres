@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/estadistica.css">
+    <title>Estadísticas | Curso práctico de JS</title>
+</head>
+<body>
+    <main class="main">
+        <div class="home">
+            <a href="./index.html">Home</a>
+        </div>
+        <header class="header">
+            <h1>Herramientas estadísticas</h1>
+        </header>
+        <div class="author">
+            <h3>Talleres realizados por </h3>
+            <img src="./img/github.png" alt="github-account">
+            <h3><a href="https://github.com/alvanrado" target="_blank">alvanrado</a> | Ivan Alvarado</h3>
+        </div>
+        <section>
+            <form>
+                <label for="promedioInput">Escribe los datos de tu promedio:</label>
+                <input id="promedioInput" type="text">
+                <button id="buttonPromedio" type="button">Calcular promedio</button>
+                <p id="resultPromedio"></p> <br>
+                
+                <label for="medianaInput">Escribe los datos de tu mediana:</label>
+                <input id="medianaInput" type="text">
+                <button id="medianaButton" type="button">Calcular mediana</button>
+                <p id="resultMediana"></p> <br>
+
+                <label for="modaInput">Escribe los datos de tu moda:</label>
+                <input id="modaInput" type="text">
+                <button id="modaButton" type="button">Calcular moda</button>
+                <p id="resultModa"></p>
+            </form>
+        </section>
+    </main>
+    <script src="./scripts/promedio.js"></script>
+</body>
+</html>

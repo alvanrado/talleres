@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+} 
+
+.main header {
+    padding: 80px 0px;
+}
+
+.main .home a { 
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+
+.main .home {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+
+.main .home a:hover {
+    border-bottom: 1px dashed black;
+}
+
+.main .author {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -60px;
+}
+
+.main .author img {
+    width: 16px;
+    margin: 3px 5px 5px 10px;
+}
+
+.main .author h3 {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+
+.main .author h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.main .author a:hover {
+    border-bottom: 1px dashed black;
+}
+
+.main h1 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.main .form-content label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.main p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main .form-content h2 {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.main .form-content span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+}
+
+.main .form-content button {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.main input {
+    padding: 8px;
+}
+
+.main .form-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 990px) {
+
+    .main h1 {
+        padding-top: 25px;
+    }
+
+    .main .form-content {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .main .form-content h2 {
+        margin-top: 25px;
+    }
+}

@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main > h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 150px;
+    font-weight: 700;
+}
+
+.author {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.author img {
+    width: 16px;
+    margin: 3px 5px 5px 10px;
+}
+
+.author h3 {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+
+.author h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.author a:hover {
+    border-bottom: 1px dashed black;
+}
+
+.main nav {
+    margin-top: 100px;
+}
+
+.main nav .talleres {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+.main nav .talleres a {
+    border: 1px solid black;
+    padding: 35px 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.main nav .talleres li {
+    margin-bottom: 100px;
+}
+
+
+.main nav .talleres li a:hover {
+    cursor: pointer;
+    background: rgba(160, 160, 160, 0.1);
+}
+
+
+@media screen and (max-width:750px) {
+    .main nav .talleres {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
