@@ -90,7 +90,7 @@ function calcularAreaTriangulo() {
     const valueBase = inputBase.value
     const valueLado = inputLado.value
     const valueLado2 = inputLado2.value
-    if (value == 0 || value2 == 0 || valueBase == 0) return
+    if (valueLado == 0 || valueLado2 == 0 || valueBase == 0) return
 
     const altura = alturaTriangulo(valueBase,valueLado)
     const area = areaTriangulo(valueBase,altura)
@@ -108,7 +108,7 @@ function calcularAlturaTriangulo() {
     const valueBase = inputBase.value
     const valueLado = inputLado.value
     const valueLado2 = inputLado2.value
-    if (value == 0 || value2 == 0 || valueBase == 0) return
+    if (valueLado == 0 || valueLado2 == 0 || valueBase == 0) return
 
     const altura = alturaTriangulo(valueBase,valueLado)
     const resultadoString = altura.toFixed(2)
