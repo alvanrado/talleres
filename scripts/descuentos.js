@@ -31,6 +31,8 @@ const discountButton = () => {
         return coupon.name === couponValue
     }    
 
+    if (price == 0) return
+
     const userCoupon = coupons.find(isCouponValid)
 
     if (!userCoupon) { 
