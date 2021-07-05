@@ -45,7 +45,7 @@ function calcularPerimetroCuadrado() {
     const resultado = document.getElementById('resultadoCuadrado')
 
     const value = input.value
-
+    if (value == 0) return
     const perimetro = perimetroCuadrado(value)
     const resultadoString = perimetro.toFixed(0)
     resultado.innerHTML = resultadoString.bold() + 'cm'.bold()
@@ -56,6 +56,7 @@ function calcularAreaCuadrado() {
     const resultado = document.getElementById('resultadoCuadrado')
 
     const value = input.value
+    if (value == 0) return
 
     const area = areaCuadrado(value)
     const resultadoString = area.toFixed(0)
@@ -72,6 +73,7 @@ function calcularPerimetroTriangulo() {
     const value = Number(input.value)
     const value2 = Number(input2.value)
     const valueBase = Number(inputBase.value)
+    if (value == 0 || value2 == 0 || valueBase == 0) return
 
     const perimetro = perimetroTriangulo(value,value2,valueBase)
     const resultadoString = perimetro.toFixed(0)
@@ -88,6 +90,7 @@ function calcularAreaTriangulo() {
     const valueBase = inputBase.value
     const valueLado = inputLado.value
     const valueLado2 = inputLado2.value
+    if (value == 0 || value2 == 0 || valueBase == 0) return
 
     const altura = alturaTriangulo(valueBase,valueLado)
     const area = areaTriangulo(valueBase,altura)
@@ -105,6 +108,7 @@ function calcularAlturaTriangulo() {
     const valueBase = inputBase.value
     const valueLado = inputLado.value
     const valueLado2 = inputLado2.value
+    if (value == 0 || value2 == 0 || valueBase == 0) return
 
     const altura = alturaTriangulo(valueBase,valueLado)
     const resultadoString = altura.toFixed(2)
@@ -117,6 +121,7 @@ function calcularPerimetroCirculo() {
 
     const input = document.getElementById('inputCirculoRadio')
     const inputValue = input.value
+    if (inputValue == 0) return
 
     const perimetro = perimetroCirculo(inputValue)
     const resultadoString = perimetro.toFixed(2)
@@ -128,6 +133,7 @@ function calcularAreaCirculo() {
 
     const input = document.getElementById('inputCirculoRadio')
     const inputValue = input.value
+    if (inputValue == 0) return
 
     const area = areaCirculo(inputValue)
     const resultadoString = area.toFixed(2)

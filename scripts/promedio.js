@@ -77,6 +77,7 @@ const promedioResult = (button) => {
         promedioArrString.forEach(element => {
             promedioArrNumber.push(Number(element))
         })
+        if (promedioValue == 0) return
         if (!isString(promedioArrNumber)){      
             let resultado = promedio(promedioArrNumber)
             let resultado2Digits = resultado.toFixed(2)
@@ -96,6 +97,7 @@ const medianaResult = (button) => {
         medianaArrString.forEach(element => {
             medianaArrNumber.push(Number(element))
         })
+        if (medianaValue == 0) return
         if (!isString(medianaArrNumber)){
             let resultado = mediana(medianaArrNumber)
             let resultado2Digits = resultado.toFixed(2)
@@ -115,6 +117,7 @@ const modaResult = (button) => {
         modaArrString.forEach(element => {
             modaArrNumber.push(Number(element))
         })
+        if (modaValue == 0) return
         if (!isString(modaArrNumber)){
             let resultado = moda(modaArrNumber)
             resultModa.innerHTML = resultado
